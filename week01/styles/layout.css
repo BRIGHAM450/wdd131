@@ -18,7 +18,7 @@ body {
     /* Header y footer automáticos, main ocupa el resto */
     min-height: 100vh;
     /* Ocupa toda la altura de la pantalla */
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     /* Fuente general */
 }
 
