@@ -1,0 +1,90 @@
+/* --- Reinicio general --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Controla mejor el tamaño total de los elementos */
+}
+
+/* --- Estructura principal del sitio --- */
+body {
+    display: grid;
+    /* Organiza la página en un diseño de cuadrícula */
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    /* Header y footer automáticos, main ocupa el resto */
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    font-family: sans-serif;
+    /* Fuente general */
+}
+
+/* --- Encabezado (Header) --- */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+/* --- Navegación --- */
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+header h1 {
+    padding: 3rem;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    /* Alinea los enlaces en fila */
+    justify-content: space-around;
+    /* Espacio igual entre enlaces */
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1.5rem 2rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #444;
+    /* Color al pasar el mouse */
+}
+
+/* --- Contenido principal y lateral --- */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* 3 partes para contenido, 1 para aside */
+}
+
+.main-content {
+    background-color: #ccc;
+    padding: 1rem;
+}
+
+.aside-content {
+    background-color: white;
+    padding: 1rem;
+}
+
+/* --- Pie de página (Footer) --- */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5rem;
+}
