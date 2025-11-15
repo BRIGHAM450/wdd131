@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Brigham Carrera</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals | Brigham Carrera | Learning HTML, CSS, and JavaScript basics">
+    <meta name="author" content="Brigham Carrera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <!-- TEMPLE GRID -->
+        <div class="temples">
+            <figure><img src="https://placehold.co/300x200" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 7">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 8">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+            <figure><img src="https://placehold.co/300x200" alt="Temple 9">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+        </div>
+        <!-- END GRID -->
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brigham Carrera | Peru</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

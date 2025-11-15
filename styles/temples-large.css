@@ -1,0 +1,27 @@
+@media (min-width: 740px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* Temples Grid for Large Screens: 4 columns */
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hamburger {
+        display: none;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        }
+}
