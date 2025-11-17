@@ -1,18 +1,10 @@
-const yearSpan = document.getElementById("currentyear");
-const lastModifiedSpan = document.getElementById("lastModified");
+const hamburger = document.getElementById("hamburger");
+const navList = document.querySelector("nav ul");
 
-yearSpan.textContent = new Date().getFullYear();
-lastModifiedSpan.textContent = document.lastModified;
-
-// HAMBURGER MENU
-const hamburgerBtn = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#navMenu");
-
-hamburgerBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-    hamburgerBtn.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
+hamburger.addEventListener("click", () => {
+    navList.classList.toggle("show");
+    hamburger.textContent = navList.classList.contains("show") ? "✖" : "☰";
 });
-
 
 // Mostrar el año actual
 document.getElementById("currentyear").textContent = new Date().getFullYear();

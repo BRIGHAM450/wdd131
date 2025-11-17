@@ -1,27 +1,33 @@
-@media (min-width: 740px) {
+/* ===== Desktop / Large Screens ===== */
+@media (min-width: 768px) {
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    /* Temples Grid for Large Screens: 4 columns */
+    /* Grid de templos en 3 columnas */
     .temples {
         grid-template-columns: repeat(3, 1fr);
     }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
 
-    #hamburger {
-        display: none;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        }
+    }
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+	}
+	.navigation a {
+        text-align: center;
+	}
+	#hamburger {
+		display: none;
+	}
+
+        /* Grid de templos en 3 columnas */
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
