@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+    padding-bottom: 20px;
+}
+
+header{
+    background-color:#b11d1d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1.5rem solid rgb(255, 255, 255);
+}
+
+.hero img{
+    width: 100%;
+    border-bottom: 0.5rem solid #b11d1d;
+}
+
+/* 🔹 DATA SECTION */
+.data-list {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.data-list {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
