@@ -1,0 +1,70 @@
+/* ---------------------------
+🖥️ VERSIÓN ESCRITORIO (PC)
+----------------------------*/
+@media (min-width: 900px) {
+
+    /* Hero en grande y imagen*/
+    .weather h2 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .hero img {
+        height: 700px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    /* contenerdor*/
+    .weather {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* contenerdor tamanos y todo*/
+    .data,
+    .weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid #ccc;
+        padding: 1.5rem;
+        width: 260px;
+        border-radius: 10px;
+    }
+
+
+    /* Data a la izquierda */
+    .data {
+        top: 200px;
+        left: 40px;
+    }
+
+    /* Weather a la derecha */
+    .weather {
+        top: 250px;
+        right: 40px;
+    }
+
+    /* Pseudo-elemento para el icono en escritorio */
+    .weather h2::after {
+        content: " ⛅";
+        /* icono que aparecerá al lado de Weather */
+        font-size: 1.8rem;
+        margin-left: 8px;
+    }
+
+
+    footer {
+        padding-bottom: 40px;
+    }
+}

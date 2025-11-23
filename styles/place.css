@@ -11,32 +11,53 @@ body {
 
 header{
     background-color:#b11d1d;
-    color: white;
-    text-align: center;
     padding: 30px;
     border-bottom: 1.5rem solid rgb(255, 255, 255);
 }
+header h1{
+    text-align: center;
+    color: white;
+}
 
+/* ======= HERO SECTION ======= */
 .hero img{
     width: 100%;
     border-bottom: 0.5rem solid #b11d1d;
+    display: block;
 }
 
-/* 🔹 DATA SECTION */
-.data-list {
-    background: white;
-    margin: 20px;
-    padding: 20px;
+/* ======= SECTIONSSTYLE ======= */
+.data,
+.weather {
+    padding: 1.2rem;
+}
+
+.data h2,
+.weather h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* ======= LIST ITEMS (Label: Value) ======= */
+.data-list p,
+.weather-list p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
     text-align: center;
 }
-.data-list {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
+/* Weather mobile icon */
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 60px;
 }
-h2 {
+
+/* 🔹 FOOTER */
+footer {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
+    background: #b11d1d;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
 }
 
