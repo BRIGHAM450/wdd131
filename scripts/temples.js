@@ -1,10 +1,18 @@
-const hamburger = document.getElementById("hamburger");
-const navList = document.querySelector("nav ul");
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
 
-hamburger.addEventListener("click", () => {
-    navList.classList.toggle("show");
-    hamburger.textContent = navList.classList.contains("show") ? "✖" : "☰";
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
 });
+
+// Cerrar al hacer clic en un enlace
+document.querySelectorAll('.navigation a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+});
+
 
 // Mostrar el año actual
 document.getElementById("currentyear").textContent = new Date().getFullYear();

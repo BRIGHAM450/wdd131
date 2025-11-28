@@ -1,26 +1,16 @@
 /* ===== Desktop / Large Screens ===== */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
     /* Grid de templos en 3 columnas */
     .temples {
         grid-template-columns: repeat(3, 1fr);
     }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 40px;
-
-    }
-
     .navigation {
 		display: flex;
+        justify-content: center;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
-	}
-	.navigation a {
-        text-align: center;
+		display: block;
 	}
 	#hamburger {
 		display: none;
@@ -29,5 +19,10 @@
         /* Grid de templos en 3 columnas */
     .temples {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+    h1 {
+    padding-bottom: 0;
     }
 }
