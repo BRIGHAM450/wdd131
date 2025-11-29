@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de lazy loading de imágenes">
+    <meta name="author" content="Tu Nombre">
+    <title>Lazy Loading Demo</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Galería de Gatitos 🐱</h1>
+        <p>Desplázate hacia abajo para ver cómo las imágenes se cargan progresivamente</p>
+
+        <!-- Gatito 1 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=1" alt="Gatito adorable número 1" loading="lazy"
+                width="400" height="600">
+        </picture>
+
+        <!-- Gatito 2 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=2" alt="Gatito adorable número 2" loading="lazy"
+                width="400" height="600">
+        </picture>
+
+        <!-- Gatito 3 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=3" alt="Gatito adorable número 3" loading="lazy"
+                width="400" height="600">
+        </picture>
+
+        <!-- Gatito 4 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=4" alt="Gatito adorable número 4" loading="lazy"
+                width="400" height="600">
+        </picture>
+
+        <!-- Gatito 5 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=5" alt="Gatito adorable número 5" loading="lazy"
+                width="400" height="600">
+        </picture>
+
+        <!-- Gatito 6 -->
+        <picture>
+            <img src="https://cataas.com/cat?width=400&height=600&id=6" alt="Gatito adorable número 6" loading="lazy"
+                width="400" height="600">
+        </picture>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Tu Nombre</p>
+        <p>Última modificación: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
