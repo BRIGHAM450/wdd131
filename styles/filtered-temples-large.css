@@ -1,0 +1,41 @@
+/* ===== Desktop / Large Screens ===== */
+@media (min-width: 900px) {
+
+    /* Header con h1 izquierda y nav derecha */
+    header {
+        justify-content: space-between;
+        /* ← Separa en esquinas */
+        align-items: center;
+    }
+
+    h1 {
+        padding-bottom: 0;
+    }
+
+    nav {
+        width: auto;
+    }
+    .navigation {
+        display: flex;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 0 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* Grid de templos en 3 columnas */
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

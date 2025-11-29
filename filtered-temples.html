@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Brigham Carrera</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals | Brigham Carrera | Learning HTML, CSS, and JavaScript basics">
+    <meta name="author" content="Brigham Carrera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="navigation">
+                <li><a href="#" class="active" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <!-- TEMPLE GRID - Dinámicamente generado por JavaScript -->
+        <section class="temples" id="temple-container">
+            <!-- Las tarjetas de templos se generarán aquí -->
+        </section>
+        <!-- END GRID -->
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brigham Carrera | Peru</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
