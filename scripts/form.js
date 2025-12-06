@@ -1,5 +1,6 @@
 // ============================================
 // PRODUCTS ARRAY
+// ============================================
 const products = [
   {
     id: "fc-1888",
@@ -28,31 +29,35 @@ const products = [
   }
 ];
 
-// DOM REFERENCES
-const productSelect = document.getElementById('productName');
-const installDateInput = document.getElementById('installDate');
-
+// ============================================
 // FUNCTION: POPULATE SELECT WITH PRODUCTS
 // Uses the products array to create the options
-
+// ============================================
 function populateProducts() {
+  const productSelect = document.getElementById('productName');
+  
   // forEach is a CALLBACK executed for each product
   products.forEach(function(product) {
     // Create option element
     const option = document.createElement('option');
     
     // Set attributes
-    option.value = product.id;          // value = product id
-    option.textContent = product.name;  // text = product name
+    option.value = product.id;           // value = product id
+    option.textContent = product.name;   // text = product name
     
-    // Add to select
+    // Add to the select element
     productSelect.appendChild(option);
   });
+  
+  console.log('Products loaded:', products.length);
 }
 
+// ============================================
 // FUNCTION: SET MAX DATE
-// Does not allow future dates
+// Prevents selecting future dates
+// ============================================
 function setMaxDate() {
+  const installDateInput = document.getElementById('installDate');
   const today = new Date();
   const year = today.getFullYear();
   const month = String(today.getMonth() + 1).padStart(2, '0');
@@ -60,14 +65,22 @@ function setMaxDate() {
   const maxDate = `${year}-${month}-${day}`;
   
   installDateInput.setAttribute('max', maxDate);
+  
+  console.log('Max date set to:', maxDate);
 }
 
+// ============================================
 // INITIALIZATION ON PAGE LOAD
 // DOMContentLoaded is a CALLBACK
+// ============================================
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Page loaded - Initializing form...');
+  
   // Populate select with products
   populateProducts();
   
   // Set max date
   setMaxDate();
+  
+  console.log('Form initialization complete');
 });
