@@ -1,0 +1,268 @@
+/* ============================================
+   RESET AND GENERAL STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F5F5DC;
+    /* Bone color */
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(114, 47, 55, 0.15);
+    overflow: hidden;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+    background: linear-gradient(135deg, #722F37 0%, #8B3A47 100%);
+    /* Wine red */
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+main {
+    padding: 40px 30px;
+}
+
+/* ============================================
+   REQUIRED FIELDS NOTE
+   ============================================ */
+.required-note {
+    background: #FFF8E7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 4px solid #C9A961;
+    /* Gold */
+    color: #6B5632;
+    font-size: 14px;
+}
+
+.asterisk {
+    color: #8B3A47;
+    font-weight: bold;
+}
+
+/* ============================================
+   FORM GROUPS
+   ============================================ */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* ============================================
+   LABELS
+   ============================================ */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #722F37;
+    /* Wine red */
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.required::after {
+    content: " *";
+    color: #8B3A47;
+}
+
+/* ============================================
+   INPUTS, SELECTS, TEXTAREA
+   ============================================ */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #E8D5C4;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #722F37;
+    /* Wine red */
+    box-shadow: 0 0 0 3px rgba(114, 47, 55, 0.1);
+}
+
+select {
+    cursor: pointer;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ============================================
+   RATING STARS
+   ============================================ */
+.rating-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.rating-group input[type="radio"] {
+    display: none;
+}
+
+.rating-group label.star {
+    cursor: pointer;
+    font-size: 35px;
+    color: #E8D5C4;
+    transition: color 0.2s ease;
+    margin: 0;
+    font-weight: normal;
+}
+
+.rating-group input[type="radio"]:checked~label.star,
+.rating-group label.star:hover,
+.rating-group label.star:hover~label.star {
+    color: #C9A961;
+    /* Gold */
+}
+
+/* ============================================
+   CHECKBOXES
+   ============================================ */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #722F37;
+    /* Wine red */
+}
+
+.checkbox-item label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+    color: #333;
+}
+
+/* ============================================
+   HELP TEXT
+   ============================================ */
+.help-text {
+    font-size: 13px;
+    color: #888;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* ============================================
+   SUBMIT BUTTON
+   ============================================ */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #722F37 0%, #8B3A47 100%);
+    /* Wine red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #8B3A47 0%, #A04656 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(114, 47, 55, 0.3);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background: #722F37;
+    /* Wine red */
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-group label.star {
+        font-size: 30px;
+    }
+}

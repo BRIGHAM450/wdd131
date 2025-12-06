@@ -1,0 +1,245 @@
+/* ============================================
+RESET AND GENERAL STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F5F5DC;
+    /* Bone color */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ============================================
+MAIN CONTAINER
+   ============================================ */
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(114, 47, 55, 0.15);
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+HEADER
+   ============================================ */
+header {
+    background: linear-gradient(135deg, #722F37 0%, #8B3A47 100%);
+    /* Wine red */
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.checkmark {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: checkmarkPop 0.6s ease;
+}
+
+@keyframes checkmarkPop {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+MAIN CONTENT
+   ============================================ */
+main {
+    padding: 40px 30px;
+}
+
+/* ============================================
+REVIEW SUMMARY
+   ============================================ */
+.review-summary {
+    background: #FFF8F0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #722F37;
+    /* Wine red */
+}
+
+.review-summary h2 {
+    color: #722F37;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #E8D5C4;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-label {
+    font-weight: 600;
+    color: #722F37;
+    /* Wine red */
+}
+
+.summary-value {
+    color: #333;
+    text-align: right;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.rating-stars {
+    color: #C9A961;
+    /* Gold */
+    font-size: 20px;
+}
+
+/* ============================================
+COUNTER
+   ============================================ */
+.counter-section {
+    background: linear-gradient(135deg, #722F37 0%, #8B3A47 100%);
+    /* Wine red */
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.counter-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.counter-display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.counter-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* ============================================
+BUTTONS
+   ============================================ */
+.actions {
+    margin-top: 25px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #722F37 0%, #8B3A47 100%);
+    /* Wine red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #8B3A47 0%, #A04656 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(114, 47, 55, 0.3);
+}
+
+/* ============================================
+FOOTER
+   ============================================ */
+footer {
+    background: #722F37;
+    /* Wine red */
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ============================================
+RESPONSIVE
+   ============================================ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .checkmark {
+        font-size: 60px;
+    }
+
+    .counter-display {
+        font-size: 2.5rem;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .summary-value {
+        text-align: left;
+        margin-left: 0;
+    }
+}
